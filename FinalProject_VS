@@ -1,0 +1,58 @@
+'''
+Final Project: US Mass Shootings
+Date: May 8th, 2023
+Programmer: Alan Van Sant
+--Description
+I worked on and completed this project by myself.
+'''
+
+import matplotlib as mpl
+import pandas as pd
+import streamlit as st
+import streamlit.components.v1 as components
+import numpy as np
+import pydeck as pdk
+import string
+
+
+PUNCTUATION = string.punctuation
+
+
+df = pd.read_csv('USMassShootings.csv', encoding='cp1252')
+
+
+'''st.set_page_config(page_title='My Streamlit App', page_icon=':guardsman:', layout='wide', initial_sidebar_state='collapsed', background_color='White')
+st.sidebar.title("Navigation")
+page = st.sidebar.selectbox("Select a page", ["Introduction/Project Overview", "Number of stadiums in a selected state", "When stadiums were built", "Largest capacity stadiums"])
+
+
+
+#Introduction
+if page == "Introduction/Project Overview":
+    title = '<div style="text-align:center;"><p style="font-family:Times New Roman; color:Maroon; font-size: 40px;">Python Final Project</p></div>'
+    st.markdown(title, unsafe_allow_html=True)
+
+    header = '<div style="text-align:center;"><p style="font-family:Times New Roman; color:Maroon; font-size: 40px;">Mass Shootings in the US</p></div>'
+    st.markdown(header, unsafe_allow_html=True)
+    header1 = '<div style="text-align:center;"><p style="font-family:Daytona; color:SkyBlue; font-size: 30px;">Introduction/Project Overview</p></div>'
+    st.markdown(header1, unsafe_allow_html=True)
+
+    from PIL import Image
+    #input_image = Image.open("C:/Users/mbhoc/OneDrive - Bentley University/Documents/CS 230/stadium1.jpg")
+    #st.image(input_image, caption="Bryant-Denny Stadium, University of Alabama", width=550, use_column_width=True)
+
+    st.write("For this project I will be presenting data for Shootings that have occurred in the US."
+             "I will be have a query which "
+             " I plan to present a query which allows the user to look at look at the demographics of the shooters (age, gender, race) to see if there"
+             " are any profiles that stand out. I will see what is the most common method of obtaining "
+             "guns and look at how the type of gun(s) as well as the number of guns used relates to number"
+             " of victims and deaths. I look at how common a history of poor mental health/condition is. I "
+             "will also make a map to see where all the shootings lie in the country. I will use a table"
+             " for the demographics and put any stats that sand out in a chart. I will put the common "
+             "weapons in a chart, and use a table for the fatality/weapon information. I will also graph"
+             " the shootings over time.")'''
+
+
+
+
+
