@@ -18,10 +18,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 import pydeck as pdk
-import string
-
-
-PUNCTUATION = string.punctuation
 
 
 df = pd.read_csv('USMassShootings.csv', encoding='cp1252')
@@ -75,9 +71,9 @@ if page == "Overview":
     st.markdown(header1, unsafe_allow_html=True)
 
     # Flag image
-    from PIL import Image
-    input_image = Image.open("C:\\Users\\duce8\\OneDrive - Bentley University\\Documents\\Junior\\CS230-1\\Final Project\\HalfMastFlag.jpg")
-    st.image(input_image, caption="Flag at half mast due to mass shooting", width=550, use_column_width=True)
+    #from PIL import Image
+    #input_image = Image.open("C:\\Users\\duce8\\OneDrive - Bentley University\\Documents\\Junior\\CS230-1\\Final Project\\HalfMastFlag.jpg")
+    #st.image(input_image, caption="Flag at half mast due to mass shooting", width=550, use_column_width=True)
 
     st.write("For this project I will be presenting data for Shootings that have occurred in the US. "
              "This is the main page of the website. You can go to any page on this website by using the sidebar "
