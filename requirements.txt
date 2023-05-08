@@ -1,4 +1,4 @@
-pandas==2.0.1
+pandas>=0.25
 matplotlib==3.7.1
 pydeck==0.8.0
 streamlit==1.20.0
